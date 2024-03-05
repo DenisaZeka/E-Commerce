@@ -1,0 +1,74 @@
+:root {
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: black;
+  --tertiary-color: #8136a5;
+  --accent-color: #b7b7b7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+body {
+  background: linear-gradient(
+    242.84deg,
+    #86276e -14.62%,
+    #370f2e 32.41%,
+    #281625 48.47%,
+    #1d181e 73.8%,
+    #0c0c0d 100%
+  );
+}
+
+ul {
+  list-style: none;
+}
+
+.fancy-decoration {
+  background-size: 40px 40px;
+  background-image: radial-gradient(
+    circle,
+    var(--secondary-color) 1px,
+    rgba(0, 0, 0, 0) 1px
+  );
+}
+
+.glassmorphism {
+  background: rgba(242, 179, 255, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.custom-shadow {
+  -webkit-box-shado: 5px 5px 30px -20px #000000;
+  -moz-box-shado: 5px 5px 30px -20px #000000;
+  -o-box-shado: 5px 5px 30px -20px #000000;
+  box-shadow: 5px 5px 30px -20px #000000;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(242, 179, 255, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--tertiary-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
